@@ -36,7 +36,7 @@ Follow-up: Can you come up with an algorithm that is less than O(n2) time comple
 // Hash table usage
 // complexity O(n2)
 function twoSumHash(nums: number[], target: number): number[] {
-  const hashTable = {};
+  const hashTable: { [key: string]: number } = {};
 
   for (let i = 0; i < nums.length; i++) {
     // if the hashTable contains the second right number, return indexes
